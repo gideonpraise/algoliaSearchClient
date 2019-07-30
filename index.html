@@ -6,9 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <title>Configure | Live Search App</title>
+    <title>Live Search App</title>
 </head>
-
 <body>
     <header>
         <div class="containerApp">
@@ -22,15 +21,6 @@
                         <a href="index.html">
                             <li class="navLink">Home</li>
                         </a>
-                        <a href="programs.html">
-                            <li class="navLink">Programs</li>
-                        </a>
-                        <a href="about.html">
-                            <li class="navLink active">About</li>
-                        </a>
-                        <a href="contact.html">
-                            <li class="navLink">Contact Us</li>
-                        </a>
                     </ul>
                 </div>
                 <a class="icon" id="clickMe"><i class="fa fa-bars"></i>|||</a>
@@ -40,15 +30,6 @@
                             <a href="index.html">
                                 <li class="navLink">Home</li>
                             </a>
-                            <a href="programs.html">
-                                <li class="navLink">Programs</li>
-                            </a>
-                            <a class="navActive" href="about.html">
-                                <li class="navLink">About</li>
-                            </a>
-                            <a href="contact.html">
-                                <li class="navLink">Contact Us</li>
-                            </a>
                         </ul>
                     </div>
                 </div>
@@ -57,19 +38,24 @@
     </header>
 
     <div class="containerApp">
-        <input type="text" name="query" id="query" autocomplete="off" autofocus>
+        <div class="card">
+            <h3 class="title"> Live Search</h3>
+            <div class="searchBox">
+                <input type="text" class="textField" placeholder="Search Here..." name="query" id="query" autocomplete="off" autofocus>
+            </div>
+        </div>
     </div>
 
-
-
-
-
-
-
+    <div class="containerApp">
+        <div class="card">
+            <h3 class="title">Search Results...</h3>
+            <div class="searchResults" id="results"></div>
+        </div>
+    </div>
 
     <footer>
         <div class="containerApp">
-            <div class="churchName">Believers' LoveWorld Zone G</div>
+            <div class="appName">Live Search App</div>
             <div class="copyright">CopyRight &copy; 2019, All Rights Reserved.</div>
         </div>
     </footer>

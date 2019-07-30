@@ -4,40 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-        <!-- <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4"></script> -->
-    
-    <title>Live Search | Test</title>
+    href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch.min.css">
+<link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css">
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4"></script>
+
+    <title>Test Page | Live Search App</title>
 </head>
 <body>
-    <h1>Live Search Test</h1>
+    <header>
+        <div class="containerApp">
+            <nav class="navBar">
+                <a href="index.html">
+                    <h1 class="logo">Program FeedBack App</h1>
+                </a>
 
-    <div id="current-refined-values">
-        <!-- CurrentRefinedValues widget will appear here -->
+                <div class="menu">
+                    <ul>
+                        <a href="index.html">
+                            <li class="navLink">Home</li>
+                        </a>
+                    </ul>
+                </div>
+                <a class="icon" id="clickMe"><i class="fa fa-bars"></i>|||</a>
+                <div class="navMobile">
+                    <div id="navLinks">
+                        <ul>
+                            <a href="index.html">
+                                <li class="navLink">Home</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="containerApp">
+        <h1>Live Search Test</h1>
+
+        <div id="current-refined-values">
+            <!-- CurrentRefinedValues widget will appear here -->
+        </div>
+    
+        <div id="clear-all">
+            <!-- ClearAll widget will appear here -->
+        </div>
+    
+        <div id="search-box">
+            <!-- SearchBox widget will appear here -->
+        </div>
+    
+        <div id="refinement-list">
+            <!-- RefinementList widget will appear here -->
+        </div>
+    
+        <div id="hits">
+            <!-- Hits widget will appear here -->
+        </div>
+    
+        <div id="pagination">
+            <!-- Pagination widget will appear here -->
+        </div>
     </div>
 
-    <div id="clear-all">
-        <!-- ClearAll widget will appear here -->
-    </div>
 
-    <div id="search-box">
-        <!-- SearchBox widget will appear here -->
-    </div>
 
-    <div id="refinement-list">
-        <!-- RefinementList widget will appear here -->
-    </div>
 
-    <div id="hits">
-        <!-- Hits widget will appear here -->
-    </div>
 
-    <div id="pagination">
-        <!-- Pagination widget will appear here -->
-    </div>
+
+
+
+    <footer>
+        <div class="containerApp">
+            <div class="churchName">Live Search App</div>
+            <div class="copyright">CopyRight &copy; 2019, All Rights Reserved.</div>
+        </div>
+    </footer>
+
+    <script src="js/test.js"></script>
 </body>
 </html>

@@ -132,76 +132,25 @@ ul li {
     margin-bottom: 2%;
 }
 
-
-
-/* Home Page Mobile CSS */
-/* SideBar Mobile */
-@media (min-width:700px) {
-    .containerApp .recentProgGrid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-column-gap: 10px;
-    }
+/* Search Box */
+.searchBox {
+    padding: 20px;
+    margin: 5px;
 }
 
-
-/* ==========================================================================
-   Slider Widget
-   ========================================================================== */
-
-   .sliderImage {
-       width: 100%;
-       box-sizing: border-box;
-       cursor: pointer;
-   }
-
-   @media (min-width:800px) {
-    #slider {
-        width: 70%;
-        margin: 0 auto;
-    }
-   }
-
-
-
-
-
-
-
-/* ==========================================================================
-   Programs Page
-   ========================================================================== */
-
-.progTitle {
-    text-align: center;
-    letter-spacing: 1px;
-    font-family: cursive;
-}
-
-.programsLayout {
-    margin-top: 3%;
-}
-
-.programItem {
-    background-color: whitesmoke;
-    padding: 50px;
-}
-
-.sideBar {
-    background-color: whitesmoke;
-    padding: 30px;
+.searchBox .textField {
+    padding: 15px;
 }
 
 
 /* Style For Larger Screen */
 @media (min-width:700px) {
-    .programsLayout {
+    .containerApp .searchResults {
         display: grid;
-        grid-template-columns: 2fr 1fr;
-        grid-gap: 30px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 10px;
     }
 }
-
 
 /* SideBar Mobile */
 @media (max-width:699px) {
@@ -209,59 +158,6 @@ ul li {
         display: none;
     }
 }
-
-
-
-/* ==========================================================================
-   FeedBack Page
-   ========================================================================== */
-    @media (max-width:699px) {
-        .containerApp {
-            width: 90%;
-            margin: 0 auto;
-        }
-
-        .containerApp .card {
-            padding: 15px;
-        }
-    }
-
-
-
-
-
-/* ==========================================================================
-   About Us Page
-   ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   Contact Us Page
-   ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* ==========================================================================
@@ -275,18 +171,10 @@ footer {
     color: #fff;
 }
 
-footer .churchName,
+footer .appName,
 footer .copyright {
     text-align: center;
 }
-
-
-
-
-
-
-
-
 
 
 /* ==========================================================================

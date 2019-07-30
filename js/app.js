@@ -4,6 +4,10 @@ const Client = algoliasearch('IVWJSYBVIN', 'ba735146ac833b1b746b7d6b0eeb1464');
 // Initialize an index
 const index = Client.initIndex('contacts');
 
+// Grab the searchResult UI element from the page
+const element = document.getElementById('results');
+element.innerHTML = "";
+
 // Database Refrence of data to be indexed
 // const contactData = "./contacts.json"; // Have to manually hard code the data....
 
@@ -59,9 +63,10 @@ const searchQuery = (event) => {
 
   if (data.length == 0) {
     alert("Please Type in a Search Query..");
+    element.innerHTML = "";
   } else {
     index.search(data, (err, { hits } = {}) => {
-      console.log(hits);
+      UI(hits);
     });
   }
 };
@@ -69,6 +74,22 @@ const searchQuery = (event) => {
 // Fire Up the Search query
 query.addEventListener('input', searchQuery);
 
+// Define the UI function
+const UI = (results) => {
+
+  results.forEach(result => {
+    const { firstname, lastname, company, phone, address } = result;
+    // console.log(firstname, lastname, company, phone, address);
+    element.innerHTML += `<div name="titleFunction" class="innerCard">
+                            <b>NAME ==> </b> <span class="innerCardTitle">${firstname} ${lastname}</span>
+                            <b>COMPANY ==> </b> ${company}
+                          </div>`
+  });
+
+  if (results.length == 0) {
+    element.innerHTML = "";
+  }
+};
 
   // Search for a first name
 // index.search('jimmie', (err, { hits } = {}) => {
